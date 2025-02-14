@@ -1,0 +1,229 @@
+body{
+  background-size: 300% 300%;
+  background-color: #00bfff;
+background-image: linear-gradient(319deg, #fdf718 0%, #00bfff 37%, #fdf718 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+        animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.authentication-wrapper {
+  display: flex;
+  flex-basis: 100%;
+  min-height: 100vh;
+  width: 100%;
+}
+.authentication-wrapper .authentication-inner {
+  width: 100%;
+}
+.authentication-wrapper.authentication-basic {
+  align-items: center;
+  justify-content: center;
+}
+.authentication-wrapper .auth-cover-illustration {
+  z-index: 1;
+  max-inline-size: 38rem;
+}
+.authentication-wrapper .authentication-image-object-left {
+  position: absolute;
+  bottom: 6%;
+  left: 4%;
+}
+.authentication-wrapper .authentication-image-object-right {
+  position: absolute;
+  bottom: 7%;
+  right: 4%;
+}
+.authentication-wrapper .authentication-image {
+  z-index: -1;
+  inline-size: 100%;
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: 0;
+}
+.authentication-wrapper .authentication-image-model {
+  width: 768px;
+}
+.authentication-wrapper.authentication-cover {
+  align-items: flex-start;
+}
+.authentication-wrapper.authentication-cover .authentication-inner {
+  min-height: 100vh;
+  position: relative;
+}
+.authentication-wrapper.authentication-cover .authentication-image {
+  inset-inline-start: unset;
+}
+.authentication-wrapper.authentication-cover .authentication-image-tree {
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+}
+.authentication-wrapper.authentication-basic .authentication-inner {
+  max-width: 350px;
+}
+.authentication-wrapper .auth-input-wrapper .auth-input {
+  max-width: 50px;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  font-size: 150%;
+}
+
+@media (max-width: 575.98px) {
+  .authentication-wrapper .auth-input-wrapper .auth-input {
+    font-size: 1.25rem;
+  }
+}
+.light-style .authentication-wrapper .authentication-bg {
+  background-color: #fff;
+}
+body {
+  zoom: 0.97;
+}
+
+
+.btn-loading{
+  display: block;
+	width: 100%;
+}
+#preloader {
+  overflow: hidden;
+  background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 9999;
+  color: #fff;
+}
+
+#preloader .jumper {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: absolute;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+}
+
+#preloader .jumper > div {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  position: absolute;
+  opacity: 0;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: jumper 1s 0s linear infinite;
+  animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper > div:nth-child(2) {
+  -webkit-animation-delay: 0.fff33s;
+  animation-delay: 0.fff33s;
+}
+
+#preloader .jumper > div:nth-child(3) {
+  -webkit-animation-delay: 0.66666s;
+  animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes jumper {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  5% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinner-border {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-left:auto;
+  margin-right:auto;
+  /* vertical-align: text-bottom; */
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border .75s linear infinite;
+  animation: spinner-border .75s linear infinite;
+}
+
+.spinner-border-sm {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-width: 0.2em;
+}
+
+.copyright{
+  font-size:0.8em;
+}
+.foot{
+  margin-bottom:-0.1em;
+}
