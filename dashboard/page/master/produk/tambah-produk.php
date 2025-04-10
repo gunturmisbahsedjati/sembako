@@ -19,9 +19,17 @@ if (!isset($_SESSION['status_login'])) {
 ?>
 <form action="setCategory" method="post" role="form" enctype="multipart/form-data" autocomplete="off">
     <div class="modal-header">
-        <h4><i class="mdi mdi-plus-box-outline"></i> Tambah Kategori Produk</h4>
+        <h4><i class="mdi mdi-plus-box-outline"></i> Tambah Barang</h4>
     </div>
     <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div>
+                    <label class="form-label">Nama Barang</label>
+                    <input type="text" class="form-control" placeholder="Nama Kategori" name="kategori" aria-describedby="defaultFormControlHelp" required>
+                </div>
+            </div>
+        </div>
         <div class="mb-3">
             <label class="form-label">Nama Kategori</label>
             <input type="text" class="form-control" placeholder="Nama Kategori" name="kategori" aria-describedby="defaultFormControlHelp" required>

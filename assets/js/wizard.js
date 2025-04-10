@@ -436,16 +436,16 @@ $(document).ready(function () {
 
 //meja
 $(document).ready(function () {
-  $('#addTable').on('show.bs.modal', function (e) {
-    $('.modal .modal-dialog').attr('class', 'modal-dialog modal-sm');
-    document.getElementById("load-add-table").style.display = "block";
-    document.getElementById("add-table").style.display = "none";
+  $('#addProduct').on('show.bs.modal', function (e) {
+    $('.modal .modal-dialog').attr('class', 'modal-dialog modal-lg');
+    document.getElementById("load-add-product").style.display = "block";
+    document.getElementById("add-product").style.display = "none";
     $.ajax({
-      url: 'dashboard/page/master/meja/tambah-meja',
+      url: 'dashboard/page/master/produk/tambah-produk',
       success: function (data) {
-        document.getElementById("load-add-table").style.display = "none";
-        document.getElementById("add-table").style.display = "block";
-        $('.add-table').html(data);
+        document.getElementById("load-add-product").style.display = "none";
+        document.getElementById("add-product").style.display = "block";
+        $('.add-product').html(data);
       }
     });
   });

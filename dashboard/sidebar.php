@@ -33,17 +33,12 @@
                 </li>
                 <li class="menu-item">
                     <a href="category" class="menu-link">
-                        <div data-i18n="User">Kategori Produk</div>
-                    </a>
-                </li>
-                <li class="menu-item">
-                    <a href="table" class="menu-link">
-                        <div data-i18n="User">Meja</div>
+                        <div data-i18n="User">Kategori Barang</div>
                     </a>
                 </li>
                 <li class="menu-item">
                     <a href="product" class="menu-link">
-                        <div data-i18n="Barang">Menu / Produk</div>
+                        <div data-i18n="Barang">Daftar Barang</div>
                     </a>
                 </li>
                 <li class="menu-item">
